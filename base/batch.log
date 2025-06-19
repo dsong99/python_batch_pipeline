@@ -1,0 +1,45 @@
+2025-06-19 14:58:21,184 - 16988 - 12116 - INFO - initializing Jobs ...
+2025-06-19 14:58:21,200 - 16988 - 12116 - INFO - create tasks [{'id': 1, 'params': 'file_path=C:\\work\\python_batch\\batch\\test\\test1.csv;', 'runner': 'readers.csv_reader.CsvReader'}, {'id': 2, 'runner': 'transformers.dummy_transformer.CsvTransformer'}, {'id': 3, 'params': 'file_path=C:\\work\\python_batch\\batch\\test\\test2.csv;', 'runner': 'writers.csv_writer.CsvWriter'}]
+2025-06-19 14:58:21,201 - 16988 - 12116 - INFO - create task_des {'id': 1, 'params': 'file_path=C:\\work\\python_batch\\batch\\test\\test1.csv;', 'runner': 'readers.csv_reader.CsvReader'}
+2025-06-19 14:58:21,201 - 16988 - 12116 - INFO - module readers.csv_reader, class CsvReader
+2025-06-19 14:58:25,030 - 16988 - 12116 - INFO - task <class 'readers.csv_reader.CsvReader'> setting params
+2025-06-19 14:58:25,030 - 16988 - 12116 - INFO - task 1 <class 'readers.csv_reader.CsvReader'> is crated successfully
+2025-06-19 14:58:25,031 - 16988 - 12116 - INFO - create task_des {'id': 2, 'runner': 'transformers.dummy_transformer.CsvTransformer'}
+2025-06-19 14:58:25,032 - 16988 - 12116 - INFO - module transformers.dummy_transformer, class CsvTransformer
+2025-06-19 14:58:25,045 - 16988 - 12116 - INFO - task <class 'transformers.dummy_transformer.CsvTransformer'> setting params
+2025-06-19 14:58:25,046 - 16988 - 12116 - INFO - task 2 <class 'transformers.dummy_transformer.CsvTransformer'> is crated successfully
+2025-06-19 14:58:25,047 - 16988 - 12116 - INFO - create task_des {'id': 3, 'params': 'file_path=C:\\work\\python_batch\\batch\\test\\test2.csv;', 'runner': 'writers.csv_writer.CsvWriter'}
+2025-06-19 14:58:25,047 - 16988 - 12116 - INFO - module writers.csv_writer, class CsvWriter
+2025-06-19 14:58:25,087 - 16988 - 12116 - INFO - task <class 'writers.csv_writer.CsvWriter'> setting params
+2025-06-19 14:58:25,088 - 16988 - 12116 - INFO - task 3 <class 'writers.csv_writer.CsvWriter'> is crated successfully
+2025-06-19 14:58:25,089 - 16988 - 12116 - INFO - job 1 transform csv create tasks finished, total tasks 3
+2025-06-19 14:58:25,090 - 16988 - 12116 - INFO - create tasks [{'id': 1, 'params': 'file_path=C:\\work\\python_batch\\batch\\test\\test1.csv;', 'runner': 'readers.csv_reader.CsvReader'}, {'id': 2, 'params': 'file_path=C:\\work\\python_batch\\batch\\test\\test2.csv;', 'runner': 'writers.csv_writer.CsvWriter'}]
+2025-06-19 14:58:25,090 - 16988 - 12116 - INFO - create task_des {'id': 1, 'params': 'file_path=C:\\work\\python_batch\\batch\\test\\test1.csv;', 'runner': 'readers.csv_reader.CsvReader'}
+2025-06-19 14:58:25,091 - 16988 - 12116 - INFO - module readers.csv_reader, class CsvReader
+2025-06-19 14:58:25,092 - 16988 - 12116 - INFO - task <class 'readers.csv_reader.CsvReader'> setting params
+2025-06-19 14:58:25,092 - 16988 - 12116 - INFO - task 1 <class 'readers.csv_reader.CsvReader'> is crated successfully
+2025-06-19 14:58:25,093 - 16988 - 12116 - INFO - create task_des {'id': 2, 'params': 'file_path=C:\\work\\python_batch\\batch\\test\\test2.csv;', 'runner': 'writers.csv_writer.CsvWriter'}
+2025-06-19 14:58:25,093 - 16988 - 12116 - INFO - module writers.csv_writer, class CsvWriter
+2025-06-19 14:58:25,094 - 16988 - 12116 - INFO - task <class 'writers.csv_writer.CsvWriter'> setting params
+2025-06-19 14:58:25,095 - 16988 - 12116 - INFO - task 2 <class 'writers.csv_writer.CsvWriter'> is crated successfully
+2025-06-19 14:58:25,095 - 16988 - 12116 - INFO - job 2 dummy create tasks finished, total tasks 2
+2025-06-19 14:58:29,502 - 11784 - 15444 - INFO - running job 1 transform csv
+2025-06-19 14:58:29,503 - 11784 - 15444 - INFO - total tasks 3
+2025-06-19 14:58:29,503 - 11784 - 15444 - INFO - job 1 task 1 started ...
+2025-06-19 14:58:29,504 - 11784 - 15444 - INFO - reading ...
+2025-06-19 14:58:29,504 - 11784 - 15444 - INFO - 1 reading C:\work\python_batch\batch\test\test1.csv ...
+2025-06-19 14:58:29,523 - 10264 - 5084 - INFO - running job 2 dummy
+2025-06-19 14:58:29,524 - 10264 - 5084 - INFO - total tasks 2
+2025-06-19 14:58:29,525 - 10264 - 5084 - INFO - job 2 task 1 started ...
+2025-06-19 14:58:29,526 - 10264 - 5084 - INFO - reading ...
+2025-06-19 14:58:29,527 - 10264 - 5084 - INFO - 1 reading C:\work\python_batch\batch\test\test1.csv ...
+2025-06-19 14:58:29,558 - 11784 - 15444 - INFO - job 1 task 1 finished
+2025-06-19 14:58:29,559 - 10264 - 5084 - INFO - job 2 task 2 started ...
+2025-06-19 14:58:29,559 - 11784 - 15444 - INFO - job 1 task 2 started ...
+2025-06-19 14:58:29,565 - 11784 - 15444 - INFO - job 1 task 2 finished
+2025-06-19 14:58:29,566 - 11784 - 15444 - INFO - job 1 task 3 started ...
+2025-06-19 14:58:29,574 - 10264 - 5084 - INFO - job 2 task 2 finished
+2025-06-19 14:58:29,575 - 10264 - 5084 - INFO - job 2 SUCCESS
+2025-06-19 14:58:29,579 - 11784 - 15444 - INFO - job 1 task 3 finished
+2025-06-19 14:58:29,580 - 11784 - 15444 - INFO - job 1 SUCCESS
+2025-06-19 14:58:29,983 - 16988 - 12116 - INFO - Existing Python process

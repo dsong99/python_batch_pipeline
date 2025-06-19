@@ -1,0 +1,21 @@
+jobs:
+- job_id: '1'
+  job_name: transform csv
+  tasks:
+  - id: 1
+    params: file_path=C:\work\python_batch\batch\test\test1.csv;
+    runner: readers.csv_reader.CsvReader
+  - id: 2
+    runner: transformers.dummy_transformer.CsvTransformer
+  - id: 3
+    params: file_path=C:\work\python_batch\batch\test\test2.csv;
+    runner: writers.csv_writer.CsvWriter
+- job_id: '2'
+  job_name: dummy
+  tasks:
+  - id: 1
+    params: file_path=C:\work\python_batch\batch\test\test1.csv;
+    runner: readers.csv_reader.CsvReader
+  - id: 2
+    params: file_path=C:\work\python_batch\batch\test\test2.csv;
+    runner: writers.csv_writer.CsvWriter
