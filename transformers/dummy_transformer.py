@@ -1,11 +1,11 @@
 import utils
-from base.task import Task
+from base.transformer import Transformer
 
 import logging
 logger = logging.getLogger(__name__)
 
-class CsvTransformer(Task):
-    def run(self):
+class CsvTransformer(Transformer):
+    def tranform(self):
         if 'csv_data' in self.job.data.keys():
             data_df = self.job.data['csv_data']
             data_df.drop(columns='A', inplace=True)
