@@ -1,4 +1,5 @@
-A mini Python Batch Pipeline framewrok, it requires only create jobs, tasks, and add them in configuration either in a text file like yaml or defined in a dadtabase table. In case to monitor the batch processes, a DB logger can be created, which will insert a status record in a DB table, then add db_logger at the beging and end of each task, better to do this in taask wrappers, like reader, writer and performer. 
+A mini Python Batch Pipeline framewrok, it requires only create jobs, tasks, and add them in configuration either in a text file like yaml or defined in a dadtabase table. 
+In case to monitor the batch processes, a DB logger can be created, which will insert a status record in a DB table, then add db_logger at the beging and end of each task, better to do this in taask wrappers, like reader, writer and performer. 
 
 fastAPI (A job can be triggered in FastApi webserice)
     start -> initJobs from configurations or DB
